@@ -1,7 +1,29 @@
 import React, { useState } from "react";
-import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  StyleSheet,
+  ScrollView,
+} from "react-native";
 
-const colors = ["#FF5733", "#33FF57", "#3357FF", "#F333FF"];
+const colors = [
+  "#FF5733",
+  "#33FF57",
+  "#3357FF",
+  "#F333FF",
+  "#e4dbc6",
+  "#d4c6e4",
+  "#ffefa3",
+  "#f36013",
+  "#77e9ed",
+  "#99f8dd",
+  "#0a5fb5",
+  "#6c7f27",
+  "#0497b3",
+  "#01ed09",
+  "#081973",
+];
 
 const ColorPicker = () => {
   const [selectedColor, setSelectedColor] = useState("#FFFFFF");
@@ -15,7 +37,11 @@ const ColorPicker = () => {
       }}
     >
       <Text style={styles.title}>Pick a Color</Text>
-      <View style={styles.colorsContainer}>
+      <ScrollView
+        showsHorizontalScrollIndicator={false}
+        horizontal={true}
+        style={styles.colorsContainer}
+      >
         {colors.map((color) => (
           <TouchableOpacity
             key={color}
@@ -27,7 +53,7 @@ const ColorPicker = () => {
             onPress={() => setSelectedColor(color)}
           />
         ))}
-      </View>
+      </ScrollView>
 
       <View
         style={{
@@ -51,9 +77,9 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   colorsContainer: {
-    flexDirection: "row",
-    flexWrap: "wrap",
-    justifyContent: "center",
+    // flexDirection: "row",
+    // flexWrap: "wrap",
+    // justifyContent: "center",
   },
   colorBox: {
     width: 60,

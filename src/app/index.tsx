@@ -8,6 +8,9 @@ import ParentComponent from "./components/props/ParentComponent";
 import ProductPsrent from "./components/props/ProductPsrent";
 import ColorPicker from "./components/State/ColorPicker";
 import TodoList from "./components/State/TodoList";
+import DataFetching from "./components/useEffect/DataFetching";
+import SeaFoodMeals from "./components/useEffect/SeaFoodMeals";
+import RandomUserComponent from "./components/useEffect/RandomUser";
 
 const index = () => {
   return (
@@ -28,7 +31,11 @@ const index = () => {
       {/* <ParentComponent /> */}
       {/* <ProductPsrent /> */}
       {/* <ColorPicker /> */}
-      <TodoList />
+      {/* <TodoList /> */}
+      {/* <DataFetching /> */}
+      <RandomUserComponent />
+
+      {/* <SeaFoodMeals /> */}
     </View>
   );
 };
