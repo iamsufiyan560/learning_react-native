@@ -12,6 +12,9 @@ import DataFetching from "./components/useEffect/DataFetching";
 import SeaFoodMeals from "./components/useEffect/SeaFoodMeals";
 import RandomUserComponent from "./components/useEffect/RandomUser";
 
+import Photo from "./components/Photo";
+import PasswordGenerator from "./components/Projects/PasswordGenerator";
+
 const index = () => {
   return (
     // <ScrollView showsVerticalScrollIndicator={false} style={{ margin: 20 }}>
@@ -25,6 +28,7 @@ const index = () => {
     // </ScrollView>
 
     <View>
+      {/* <CarComponent /> */}
       {/* <ListData /> */}
       {/* <ArrayOfObjects /> */}
       {/* <HugeList /> */}
@@ -33,18 +37,19 @@ const index = () => {
       {/* <ColorPicker /> */}
       {/* <TodoList /> */}
       {/* <DataFetching /> */}
-      <RandomUserComponent />
-
+      {/* <RandomUserComponent /> */}
       {/* <SeaFoodMeals /> */}
+      {/* <Photo /> */}
+      <PasswordGenerator />
     </View>
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    display: "flex",
-    gap: 56,
-  },
-});
+// const styles = StyleSheet.create({
+//   container: {
+//     display: "flex",
+//     gap: 56,
+//   },
+// });
 
 export default index;
