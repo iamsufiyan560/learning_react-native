@@ -16,7 +16,8 @@ import PasswordGenerator from "./components/Projects/PasswordGenerator";
 import App from "./components/Projects/App";
 
 import DiceApp from "./components/Projects/Dice";
-
+import CurrencyConverter from "./components/Projects/CurrencyConverter";
+import TicTocToe from "./components/Projects/TicTocToe";
 const index = () => {
   return (
     // <ScrollView showsVerticalScrollIndicator={false} style={{ margin: 20 }}>
@@ -44,7 +45,10 @@ const index = () => {
       {/* <Photo /> */}
       {/* <PasswordGenerator /> */}
       {/* <App /> */}
-      <DiceApp />
+      {/* <DiceApp /> */}
+      {/* <CurrencyConverter />
+       */}
+      <TicTocToe />
     </View>
   );
 };
