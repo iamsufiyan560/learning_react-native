@@ -18,6 +18,7 @@ import App from "./components/Projects/App";
 import DiceApp from "./components/Projects/Dice";
 import CurrencyConverter from "./components/Projects/CurrencyConverter";
 import TicTocToe from "./components/Projects/TicTocToe";
+import Main from "./components/Projects/navigations/Main";
 const index = () => {
   return (
     // <ScrollView showsVerticalScrollIndicator={false} style={{ margin: 20 }}>
@@ -48,7 +49,8 @@ const index = () => {
       {/* <DiceApp /> */}
       {/* <CurrencyConverter />
        */}
-      <TicTocToe />
+      {/* <TicTocToe /> */}
+      <Main />
     </View>
   );
 };
