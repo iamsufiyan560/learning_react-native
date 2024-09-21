@@ -19,6 +19,9 @@ import DiceApp from "./components/Projects/Dice";
 import CurrencyConverter from "./components/Projects/CurrencyConverter";
 import TicTocToe from "./components/Projects/TicTocToe";
 import Main from "./components/Projects/navigations/Main";
+import HomeScreen from "./components/Projects/Shopping/HomeScreen";
+import ModalExample from "./components/ModalExample";
+import PickerExample from "./components/PickerExample";
 const index = () => {
   return (
     // <ScrollView showsVerticalScrollIndicator={false} style={{ margin: 20 }}>
@@ -50,7 +53,10 @@ const index = () => {
       {/* <CurrencyConverter />
        */}
       {/* <TicTocToe /> */}
-      <Main />
+      {/* <Main /> */}
+      {/* <HomeScreen /> */}
+      {/* <ModalExample /> */}
+      <PickerExample />
     </View>
   );
 };
